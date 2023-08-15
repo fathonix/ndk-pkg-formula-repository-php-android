@@ -10,7 +10,7 @@ install: |
       --with-config-file-path=/data/data/net.fathonix.php/files/etc/php/8.2 \
       --with-config-file-scan-dir=/data/data/net.fathonix.php/files/etc/php/8.2/conf.d \
       --with-curl \
-      --with-gd \
+      --with-external-gd \
       --with-gettext \
       --with-pic \
       --with-sqlite3 \
@@ -19,6 +19,7 @@ install: |
       --without-msql \
       --without-mssql \
       --enable-embed \
+      --enable-gd \
       --enable-sqlite-utf8 \
       --enable-zip \
       --disable-debug \
