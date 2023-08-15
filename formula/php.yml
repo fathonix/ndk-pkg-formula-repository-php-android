@@ -13,11 +13,13 @@ install: |
       --with-external-gd \
       --with-gettext \
       --with-pic \
+      --with-pdo-sqlite \
       --with-sqlite3 \
       --with-zlib \
       --without-mhash \
       --without-msql \
       --without-mssql \
+      --without-mysqli \
       --enable-embed \
       --enable-gd \
       --enable-sqlite-utf8 \
@@ -26,6 +28,7 @@ install: |
       --disable-fpm \
       --disable-mysqlnd \
       --disable-phpdbg \
+      --disable-sockets \
       --disable-sysvmsg \
       --disable-sysvsem \
       --disable-sysvshm
