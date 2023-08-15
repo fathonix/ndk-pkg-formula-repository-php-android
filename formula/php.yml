@@ -28,6 +28,7 @@ install: |
       --enable-sockets \
       --enable-sqlite-utf8 \
       --enable-zip \
+      --disable-cgi \
       --disable-debug \
       --disable-fpm \
       --disable-mysqlnd \
