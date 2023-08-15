@@ -1,0 +1,29 @@
+summary: General-purpose scripting language
+web-url: https://www.php.net/
+git-url: https://github.com/php/php-src
+src-url: https://www.php.net/distributions/php-8.2.8.tar.gz
+src-sha: 6419b74e9b675c8d5a1afd2788c4d7996a19bbe2be409716ccb2067897af9df1
+license: PHP-3.01
+dep-pkg: bison libcurl libzip openssl re2c zlib
+install: |
+  configure \
+      --with-config-file-path=/data/data/net.fathonix.php/files/etc/php/8.2 \
+      --with-config-file-scan-dir=/data/data/net.fathonix.php/files/etc/php/8.2/conf.d \
+      --enable-embed \
+      --with-curl \
+      --with-gd \
+      --with-gettext \
+      --with-pic \
+      --with-zlib \
+      --without-mhash \
+      --without-msql \
+      --without-mssql \
+      --enable-sqlite-utf8 \
+      --enable-zip \
+      --disable-debug \
+      --disable-fpm \
+      --disable-mysqlnd \
+      --disable-phpdbg \
+      --disable-sysvmsg \
+      --disable-sysvsem \
+      --disable-sysvshm
