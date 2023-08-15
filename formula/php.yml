@@ -12,6 +12,8 @@ install: |
       --with-curl \
       --with-external-gd \
       --with-gettext \
+      --with-mbstring \
+      --with-openssl \
       --with-pic \
       --with-pdo-sqlite \
       --with-sqlite3 \
@@ -20,15 +22,16 @@ install: |
       --without-msql \
       --without-mssql \
       --without-mysqli \
+      --without-pear \
       --enable-embed \
       --enable-gd \
+      --enable-sockets \
       --enable-sqlite-utf8 \
       --enable-zip \
       --disable-debug \
       --disable-fpm \
       --disable-mysqlnd \
       --disable-phpdbg \
-      --disable-sockets \
       --disable-sysvmsg \
       --disable-sysvsem \
       --disable-sysvshm
