@@ -6,33 +6,34 @@ src-sha: 6419b74e9b675c8d5a1afd2788c4d7996a19bbe2be409716ccb2067897af9df1
 license: PHP-3.01
 dep-pkg: bison gd libcurl libxml2 libzip gettext openssl re2c sqlite zlib
 install: |
-  configure \
-      --with-config-file-path=/data/data/net.fathonix.php/files/etc/php/8.2 \
-      --with-config-file-scan-dir=/data/data/net.fathonix.php/files/etc/php/8.2/conf.d \
-      --with-curl \
-      --with-external-gd \
-      --with-gettext \
-      --with-mbstring \
-      --with-openssl \
-      --with-pic \
-      --with-pdo-sqlite \
-      --with-sqlite3 \
-      --with-zlib \
-      --without-mhash \
-      --without-msql \
-      --without-mssql \
-      --without-mysqli \
-      --without-pear \
-      --enable-embed \
-      --enable-gd \
-      --enable-sockets \
-      --enable-sqlite-utf8 \
-      --enable-zip \
-      --disable-cgi \
-      --disable-debug \
-      --disable-fpm \
-      --disable-mysqlnd \
-      --disable-phpdbg \
-      --disable-sysvmsg \
-      --disable-sysvsem \
-      --disable-sysvshm
+    configure \
+        --with-config-file-path=/data/data/net.fathonix.php/files/etc/php/8.2 \
+        --with-config-file-scan-dir=/data/data/net.fathonix.php/files/etc/php/8.2/conf.d \
+        --with-curl \
+        --with-external-gd \
+        --without-iconv \
+        --with-mbstring \
+        --with-openssl \
+        --with-pic \
+        --with-pdo-sqlite \
+        --with-sqlite3 \
+        --with-zlib \
+        --without-mhash \
+        --without-msql \
+        --without-mssql \
+        --without-mysqli \
+        --without-pear \
+        --enable-embed \
+        --enable-gd \
+        --enable-sockets \
+        --enable-sqlite-utf8 \
+        --enable-zip \
+        --disable-cgi \
+        --disable-debug \
+        --disable-fpm \
+        --disable-mysqlnd \
+        --disable-phpdbg \
+        --disable-posix \
+        --disable-sysvmsg \
+        --disable-sysvsem \
+        --disable-sysvshm
