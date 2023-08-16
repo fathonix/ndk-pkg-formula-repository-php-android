@@ -40,7 +40,9 @@ install: |
 
 fix-url: https://github.com/termux/termux-packages/raw/master/packages/php/ext-standard-dns.c.patch
 fix-sha: 8c3ee24bd61dee70b75f39c1dee2929a439c1f349387aeabf624ff4ade54f074
-dopatch: patch -p1 < ../fix/8c3ee24bd61dee70b75f39c1dee2929a439c1f349387aeabf624ff4ade54f074.patch
+dopatch: |
+    sed_in_place '/HAVE_RES_NSEARCH/d' configure &&
+    patch -p1 < ../fix/8c3ee24bd61dee70b75f39c1dee2929a439c1f349387aeabf624ff4ade54f074.patch
 
 fix-url: https://github.com/termux/termux-packages/raw/master/packages/php/ext-standard-php_fopen_wrapper.c.patch
 fix-sha: d07ba07a79ccb934f89bfe250951a0f7b721ba799ccaa288312b27c1f84a33f2
