@@ -38,12 +38,8 @@ install: |
         --disable-sysvsem \
         --disable-sysvshm
 
-fix-url: https://github.com/termux/termux-packages/raw/master/packages/php/ext-standard-dns.c.patch
-fix-sha: 8c3ee24bd61dee70b75f39c1dee2929a439c1f349387aeabf624ff4ade54f074
+fix-url: https://github.com/fathonix/ndk-pkg-formula-repository-php-android/raw/master/patch/php-android-specific.patch
+fix-sha: 963a74c25ece04cc805cb32767c794077416219b824728480f223cbeea3bcb2d
 dopatch: |
     sed_in_place '/HAVE_RES_NSEARCH/d' configure &&
-    patch -p1 < ../fix/8c3ee24bd61dee70b75f39c1dee2929a439c1f349387aeabf624ff4ade54f074.patch
-
-fix-url: https://github.com/termux/termux-packages/raw/master/packages/php/ext-standard-php_fopen_wrapper.c.patch
-fix-sha: d07ba07a79ccb934f89bfe250951a0f7b721ba799ccaa288312b27c1f84a33f2
-dopatch: patch -p1 < ../fix/d07ba07a79ccb934f89bfe250951a0f7b721ba799ccaa288312b27c1f84a33f2.patch
+    patch -p1 < ../fix/963a74c25ece04cc805cb32767c794077416219b824728480f223cbeea3bcb2d.patch
